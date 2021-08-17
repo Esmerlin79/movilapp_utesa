@@ -28,9 +28,9 @@ class MenuWidget extends StatelessWidget {
             onTap: () => Navigator.pushReplacementNamed(context, 'home'),
           ),
           ListTile(
-            leading: Icon(Icons.party_mode,color: HexColor("327D57")),
+            leading: Icon(Icons.list,color: HexColor("327D57")),
             title: Text('Pensum'),
-            onTap: (){},
+            onTap: () => Navigator.pushReplacementNamed(context, 'pensum'),
           ),
           // ListTile(
           //   leading: Icon(Icons.settings,color: Colors.blue,),
