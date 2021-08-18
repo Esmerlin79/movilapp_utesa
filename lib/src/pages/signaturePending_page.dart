@@ -43,7 +43,7 @@ class SignaturePending extends StatelessWidget {
           materias.forEach((signautre) {
               siganuteListWidget.add(
                   ListTile(
-                  leading: Icon(Icons.query_builder_sharp,color: HexColor("327D57")),
+                  leading: Icon(Icons.av_timer,color: HexColor("327D57")),
                   title: Text(signautre["codigo"] + " - " +signautre["nombre"],),
                   subtitle: Text("Cuatrimestre " + signautre["cuatrimestre"].toString()),
                 ),

@@ -73,5 +73,27 @@ class ServicesProvider {
     }
 
   }
+
+   Future<Map<String, dynamic>> getVirtualClass() async {
+
+    final authData = {
+      "token" : _prefs.token,
+    };
+
+     final resp = await http.post(
+      '$_urlBase/App/clases_virtuales',
+      body: authData
+    );
+
+    Map<String, dynamic> decodedResp = json.decode(resp.body);
+    print(decodedResp["data"]);
+
+    if( decodedResp["success"] ) {
+      return {"ok" : true, "data" : decodedResp["data"]};
+    }else {
+      return {"ok": false, "message" : decodedResp["mensaje"] };
+    }
+
+  }
   
 }

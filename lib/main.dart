@@ -5,6 +5,7 @@ import 'package:utesaapp/src/pages/home_page.dart';
 import 'package:utesaapp/src/pages/login_page.dart';
 import 'package:utesaapp/src/pages/pensum_page.dart';
 import 'package:utesaapp/src/pages/signaturePending_page.dart';
+import 'package:utesaapp/src/pages/virtualClass_page.dart';
 import 'package:utesaapp/src/shared_prefs/shared_preferences.dart';
  
 void main() async {
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         'home'     : (BuildContext context) => HomePage(),
         'pensum'   : (BuildContext context) => PensumPage(),
         'pending'  : (BuildContext context) => SignaturePending(),
+        'class'    : (BuildContext context) => VirtualClassPage(),
       },
     );
   }

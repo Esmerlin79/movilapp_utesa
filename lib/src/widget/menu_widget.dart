@@ -42,6 +42,11 @@ class MenuWidget extends StatelessWidget {
             title: Text('Asignaturas Pendientes'),
             onTap: () => Navigator.pushReplacementNamed(context, 'pending'),
           ),
+          ListTile(
+            leading: Icon(Icons.auto_stories_outlined,color: HexColor("327D57")),
+            title: Text('Clases Virtuales'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'class'),
+          ),
           // ListTile(
           //   leading: Icon(Icons.settings,color: Colors.blue,),
           //   title: Text('Settings'),
