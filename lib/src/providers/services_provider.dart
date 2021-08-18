@@ -51,5 +51,27 @@ class ServicesProvider {
     }
 
   }
+
+  Future<Map<String, dynamic>> getSignaturePending() async {
+
+    final authData = {
+      "token" : _prefs.token,
+    };
+
+     final resp = await http.post(
+      '$_urlBase/App/asignaturas_pendientes',
+      body: authData
+    );
+
+    Map<String, dynamic> decodedResp = json.decode(resp.body);
+    print(decodedResp["data"]);
+
+    if( decodedResp["success"] ) {
+      return {"ok" : true, "data" : decodedResp["data"]};
+    }else {
+      return {"ok": false, "message" : decodedResp["mensaje"] };
+    }
+
+  }
   
 }

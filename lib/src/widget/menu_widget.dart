@@ -32,6 +32,16 @@ class MenuWidget extends StatelessWidget {
             title: Text('Pensum'),
             onTap: () => Navigator.pushReplacementNamed(context, 'pensum'),
           ),
+          ListTile(
+            leading: Icon(Icons.query_builder,color: HexColor("327D57")),
+            title: Text('Horarios'),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.pending_actions_outlined,color: HexColor("327D57")),
+            title: Text('Asignaturas Pendientes'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'pending'),
+          ),
           // ListTile(
           //   leading: Icon(Icons.settings,color: Colors.blue,),
           //   title: Text('Settings'),
