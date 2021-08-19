@@ -41,7 +41,7 @@ class VirtualClassPage extends StatelessWidget {
                             children: [
                               FadeInImage(
                                 image: NetworkImage(virtualClass["foto"]),
-                                placeholder: AssetImage('assets/default.jpg'),
+                                placeholder: AssetImage('assets/jar-loading.gif'),
                                 height: double.infinity,
                                 width: 210.0,
                                 fit: BoxFit.cover,

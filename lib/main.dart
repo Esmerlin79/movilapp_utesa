@@ -4,6 +4,7 @@ import 'package:utesaapp/src/pages/home_page.dart';
 
 import 'package:utesaapp/src/pages/login_page.dart';
 import 'package:utesaapp/src/pages/pensum_page.dart';
+import 'package:utesaapp/src/pages/ratings_page.dart';
 import 'package:utesaapp/src/pages/signaturePending_page.dart';
 import 'package:utesaapp/src/pages/virtualClass_page.dart';
 import 'package:utesaapp/src/shared_prefs/shared_preferences.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         'pensum'   : (BuildContext context) => PensumPage(),
         'pending'  : (BuildContext context) => SignaturePending(),
         'class'    : (BuildContext context) => VirtualClassPage(),
+        'ratings'  : (BuildContext context) => RatingsPage(),
       },
     );
   }

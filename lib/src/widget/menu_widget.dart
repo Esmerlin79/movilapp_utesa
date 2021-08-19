@@ -47,6 +47,11 @@ class MenuWidget extends StatelessWidget {
             title: Text('Clases Virtuales'),
             onTap: () => Navigator.pushReplacementNamed(context, 'class'),
           ),
+          ListTile(
+            leading: Icon(Icons.auto_awesome_mosaic_outlined,color: HexColor("327D57")),
+            title: Text('Calificaciones'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'ratings'),
+          ),
           // ListTile(
           //   leading: Icon(Icons.settings,color: Colors.blue,),
           //   title: Text('Settings'),
