@@ -35,7 +35,7 @@ class MenuWidget extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.query_builder,color: HexColor("327D57")),
             title: Text('Horarios'),
-            onTap: () {},
+            onTap: () => Navigator.pushReplacementNamed(context, 'horario'),
           ),
           ListTile(
             leading: Icon(Icons.pending_actions_outlined,color: HexColor("327D57")),
