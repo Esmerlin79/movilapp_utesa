@@ -8,6 +8,7 @@ import 'package:utesaapp/src/pages/login_page.dart';
 import 'package:utesaapp/src/pages/pensum_page.dart';
 import 'package:utesaapp/src/pages/ratings_page.dart';
 import 'package:utesaapp/src/pages/signaturePending_page.dart';
+import 'package:utesaapp/src/pages/video_page.dart';
 import 'package:utesaapp/src/pages/virtualClass_page.dart';
 import 'package:utesaapp/src/shared_prefs/shared_preferences.dart';
  
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         'ratings'  : (BuildContext context) => RatingsPage(),
         'horario'  : (BuildContext context) => HorarioPage(),
         'calendar' : (BuildContext context) => CalendarPage(),
+        'video'    : (BuildContext context) => VideoPage(),
 
       },
     );

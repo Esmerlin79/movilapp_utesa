@@ -57,6 +57,16 @@ class MenuWidget extends StatelessWidget {
             title: Text('Calendario de Eventos'),
             onTap: () => Navigator.pushReplacementNamed(context, 'calendar'),
           ),
+          ListTile(
+            leading: Icon(Icons.chrome_reader_mode_outlined, color: HexColor("327D57")),
+            title: Text('Noticias'),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(Icons.video_call_outlined, color: HexColor("327D57")),
+            title: Text('Videos'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'video'),
+          ),
           // ListTile(
           //   leading: Icon(Icons.settings,color: Colors.blue,),
           //   title: Text('Settings'),
