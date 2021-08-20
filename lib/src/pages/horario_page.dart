@@ -12,7 +12,7 @@ class HorarioPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Horarios"),
+        title: Text("Mi Horario"),
         backgroundColor: HexColor("327D57"),
       ),
       drawer: MenuWidget(),
