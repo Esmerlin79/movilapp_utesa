@@ -52,6 +52,11 @@ class MenuWidget extends StatelessWidget {
             title: Text('Calificaciones'),
             onTap: () => Navigator.pushReplacementNamed(context, 'ratings'),
           ),
+          ListTile(
+            leading: Icon(Icons.calendar_today, color: HexColor("327D57")),
+            title: Text('Calendario de Eventos'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'calendar'),
+          ),
           // ListTile(
           //   leading: Icon(Icons.settings,color: Colors.blue,),
           //   title: Text('Settings'),

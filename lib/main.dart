@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:utesaapp/src/pages/calendar_page.dart';
 import 'package:utesaapp/src/pages/home_page.dart';
 import 'package:utesaapp/src/pages/horario_page.dart';
 
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
         'class'    : (BuildContext context) => VirtualClassPage(),
         'ratings'  : (BuildContext context) => RatingsPage(),
         'horario'  : (BuildContext context) => HorarioPage(),
+        'calendar' : (BuildContext context) => CalendarPage(),
 
       },
     );

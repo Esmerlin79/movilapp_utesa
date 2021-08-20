@@ -31,6 +31,7 @@ dependencies:
   http: 0.12.0+2
   shared_preferences: ^2.0.6
   url_launcher: ^5.0.2
+  syncfusion_flutter_calendar: ^18.4.46
 
 dev_dependencies:
   flutter_test:
