@@ -46,11 +46,11 @@ class VirtualClassPage extends StatelessWidget {
                                 width: 210.0,
                                 fit: BoxFit.cover,
                               ),
-                              SizedBox(width: 20.0,),
+                              SizedBox(width: 12.0,),
                               Column(
                                 children: [
                                   SizedBox(height: 20.0,),
-                                  Text(virtualClass["nombre"], style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
+                                  Text(virtualClass["nombre"], overflow: TextOverflow.ellipsis, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
                                   Text(virtualClass["codigo"], style: Theme.of(context).textTheme.subtitle1,),
                                   SizedBox(height: 10.0,),
                                   RaisedButton(

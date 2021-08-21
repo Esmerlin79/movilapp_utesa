@@ -63,7 +63,7 @@ class MenuWidget extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.chrome_reader_mode_outlined, color: HexColor("327D57")),
             title: Text('Noticias'),
-            onTap: () {},
+            onTap: () => Navigator.pushReplacementNamed(context, 'news'),
           ),
           ListTile(
             leading: Icon(Icons.video_call_outlined, color: HexColor("327D57")),

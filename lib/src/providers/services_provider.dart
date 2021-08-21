@@ -242,4 +242,14 @@ class ServicesProvider {
       return {"ok": false, "message" : decodedResp["mensaje"] };
     }
   }
+
+  Future<List<dynamic>> getNews() async {
+
+    final resp = await http.get('$_urlBase/App/noticias');
+
+    final decodedResp = json.decode(resp.body);
+    print(decodedResp["data"]);
+    
+    return decodedResp["data"];
+  }
 }

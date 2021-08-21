@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
 
     return Container(
       color: HexColor("327D57"),
-      height: size.height * 0.30,
+      height: size.height * 0.35,
       width: double.infinity,
       child: Column(
         children: [
