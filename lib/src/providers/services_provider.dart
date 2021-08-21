@@ -220,4 +220,26 @@ class ServicesProvider {
       return {"ok": false, "message" : decodedResp["mensaje"] };
     }
   }
+
+   Future<Map<String, dynamic>> addSuggestion(suggestion) async {
+
+    final authData = {
+      "token" : _prefs.token,
+      "sugerencia" : suggestion
+    };
+
+     final resp = await http.post(
+      '$_urlBase/App/sugerencias',
+      body: authData
+    );
+
+    Map<String, dynamic> decodedResp = json.decode(resp.body);
+    print(decodedResp["data"]);
+
+    if( decodedResp["success"] ) {
+      return {"ok" : true, "data" : decodedResp["mensaje"]};
+    }else {
+      return {"ok": false, "message" : decodedResp["mensaje"] };
+    }
+  }
 }
