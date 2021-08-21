@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:utesaapp/src/shared_prefs/shared_preferences.dart';
 import 'package:utesaapp/src/utils/utils.dart';
 
 class MenuWidget extends StatelessWidget {
+
+  final _prefs = new UserPrefereces();
 
   @override
   Widget build(BuildContext context) {
@@ -67,14 +70,24 @@ class MenuWidget extends StatelessWidget {
             title: Text('Videos'),
             onTap: () => Navigator.pushReplacementNamed(context, 'video'),
           ),
-          // ListTile(
-          //   leading: Icon(Icons.settings,color: Colors.blue,),
-          //   title: Text('Settings'),
-          //   onTap: () { 
-          //     Navigator.pop(context);
-          //     Navigator.pushReplacementNamed(context, SettingsPage.routName);
-          //   },
-          // ),
+          ListTile(
+            leading: Icon(Icons.contact_support_outlined, color: HexColor("327D57")),
+            title: Text('Quejas'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'complaints'),
+          ),
+          ListTile(
+            leading: Icon(Icons.support_sharp, color: HexColor("327D57")),
+            title: Text('Sugerencias'),
+            onTap: () => Navigator.pushReplacementNamed(context, 'suggestion'),
+          ),
+          ListTile(
+            leading: Icon(Icons.power_settings_new_rounded ,color: HexColor("327D57"),),
+            title: Text('Salir'),
+            onTap: () { 
+              _prefs.token = "";
+              Navigator.pushReplacementNamed(context, 'login');
+            },
+          ),
         ],
       ),
     );
