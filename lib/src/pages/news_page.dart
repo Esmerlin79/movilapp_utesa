@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:utesaapp/src/models/news_model.dart';
 import 'package:utesaapp/src/providers/services_provider.dart';
 import 'package:utesaapp/src/utils/utils.dart';
 import 'package:utesaapp/src/widget/menu_widget.dart';
