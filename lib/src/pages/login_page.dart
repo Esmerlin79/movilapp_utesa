@@ -19,7 +19,28 @@ class _LoginPageState extends State<LoginPage>  {
   String? _user = '';
   String? _password = '';
   String recinto = 'Selecciona tu Recinto';
-
+  final _recintos = [
+    DropdownMenuItem(
+      child: Text('Santiago'),
+      value: "UTSAN",
+    ),
+    DropdownMenuItem(
+      child: Text('Santo Domingo'),
+      value: "UTSDG",
+    ),
+    DropdownMenuItem(
+      child: Text('Santo Domingo Oriental'),
+      value: "UTSDO",
+    ),
+    DropdownMenuItem(
+      child: Text('Dajabon'),
+      value: "UTDJB",
+    ),
+    DropdownMenuItem(
+      child: Text('Gaspar Hernandez'),
+      value: "UTGHD",
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -203,6 +224,7 @@ class _LoginPageState extends State<LoginPage>  {
 
     final background = Container(
       height: size.height * 0.40,
+      // height: 370.0,
       width: double.infinity,
       decoration: BoxDecoration(
         gradient: LinearGradient(
