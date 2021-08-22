@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 import 'package:utesaapp/src/providers/services_provider.dart';
 import 'package:utesaapp/src/utils/utils.dart';

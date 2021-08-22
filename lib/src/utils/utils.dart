@@ -22,6 +22,7 @@ void showAlert( BuildContext context, String message ) {
         title: Center(child: Text("UTESA", style: TextStyle(fontWeight: FontWeight.bold),)),
         content: Text(message),
         actions: [
+          // ignore: deprecated_member_use
           FlatButton(
             child: Center(child: Text('OK')),
             onPressed: () => Navigator.of(context).pop(),
@@ -39,6 +40,7 @@ void alertLogout( BuildContext context) {
         title: Center(child: Text("UTESA", style: TextStyle(fontWeight: FontWeight.bold),)),
         content: Text("Debe ingresar nuevamente"),
         actions: [
+          // ignore: deprecated_member_use
           FlatButton(
             child: Center(child: Text('OK')),
             onPressed: () => Navigator.pushReplacementNamed(context, 'login'),

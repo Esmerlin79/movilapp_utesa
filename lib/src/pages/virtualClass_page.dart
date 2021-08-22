@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:url_launcher/url_launcher.dart';
 import 'package:utesaapp/src/providers/services_provider.dart';
 import 'package:utesaapp/src/utils/utils.dart';
@@ -53,6 +54,7 @@ class VirtualClassPage extends StatelessWidget {
                                   Text(virtualClass["nombre"], overflow: TextOverflow.ellipsis, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),),
                                   Text(virtualClass["codigo"], style: Theme.of(context).textTheme.subtitle1,),
                                   SizedBox(height: 10.0,),
+                                  // ignore: deprecated_member_use
                                   RaisedButton(
                                     child: Container(
                                       padding: EdgeInsets.symmetric(horizontal: 50.0,vertical: 10.0),

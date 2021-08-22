@@ -66,6 +66,7 @@ class _SuggestionPageState extends State<SuggestionPage> {
   }
 
   Widget _createButtton() {
+   // ignore: deprecated_member_use
    return RaisedButton(
      child: Container(
        padding: EdgeInsets.symmetric(horizontal: 80.0,vertical: 15.0),
@@ -104,6 +105,7 @@ class _SuggestionPageState extends State<SuggestionPage> {
       content: Text(mensaje),
       duration: Duration(milliseconds: 2500),
     );
+    // ignore: deprecated_member_use
     scaffoldkey.currentState!.showSnackBar(snackbar);
   }
 
